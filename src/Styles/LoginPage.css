@@ -1,0 +1,80 @@
+.login-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Ensure the form does not stretch too wide */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px; /* Increased spacing between input fields */
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block; /* Ensure the label is on its own line */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px; /* Increased padding for better space inside input boxes */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Slightly larger border radius for a smoother look */
+  box-sizing: border-box; /* Ensure padding and borders are included in element's total width/height */
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1565c0; /* Green border color on focus */
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #1565c0;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1565c0;
+}
+
+.login-btn:active {
+  background-color: #10529e; /* Darker green when the button is pressed */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
