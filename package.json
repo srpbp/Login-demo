@@ -1,9 +1,9 @@
 {
+  "homepage": "https://srpbp.github.io/Login-demo",
   "name": "cyber-demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://srpbp.github.io/Login-demo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
