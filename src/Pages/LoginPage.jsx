@@ -16,12 +16,12 @@ function LoginPage() {
     axios
       .get("http://localhost/loginDemo/api.php") // Update with your actual API URL
       .then((response) => {
-        // setUsers(response.data);
+        setUsers(response.data);
         setLoading(false);
       })
       .catch((error) => {
         setError("Error fetching data");
-        // console.error(error);
+        console.error(error);
         setLoading(false);
       });
   }, []);
@@ -51,7 +51,7 @@ function LoginPage() {
         <form className="login-form" onSubmit={handleLogin}>
           {formError && <div className="error-message">{formError}</div>} {/* Display form error */}
           <div className="input-group">
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -63,7 +63,7 @@ function LoginPage() {
             />
           </div>
           <div className="input-group">
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
